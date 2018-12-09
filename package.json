@@ -1,0 +1,15 @@
+{
+  "name": "shippingeasy",
+  "version": "0.1.0",
+  "description": "The official ShippingEasy API client for JavaScript",
+  "main": "index.js",
+  "repository": "https://github.com/ShippingEasy/shipping_easy-js",
+  "author": "ShippingEasy",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  },
+  "scripts": {
+    "test": "jest"
+  }
+}
