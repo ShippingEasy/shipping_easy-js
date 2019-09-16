@@ -8,12 +8,15 @@ const ShippingEasy = {
       return key + "=" + params[key];
     }).join("&");
 
-    const payload = [
+    const payloadParts = [
       normalizedMethod,
       path,
-      sortedParamString,
-      body
-    ].join("&")
+      sortedParamString
+    ]
+    if (body && body.length > 0){
+      payloadParts.push(body)
+    }
+    const payload = payloadParts.join("&")
 
     const hmac = crypto.createHmac("sha256", apiSecret);
     hmac.update(payload, "utf8");
