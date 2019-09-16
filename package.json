@@ -1,6 +1,6 @@
 {
   "name": "shippingeasy",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "The official ShippingEasy API client for JavaScript",
   "main": "index.js",
   "repository": "https://github.com/ShippingEasy/shipping_easy-js",
